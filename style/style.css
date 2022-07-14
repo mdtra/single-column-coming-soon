@@ -121,8 +121,8 @@ form {
 
 .fa-brands {
     display: inline;
-    vertical-align: middle;
     padding: 8px;
+    vertical-align: middle;
     color: var(--color-button);
 }
 
