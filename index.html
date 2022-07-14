@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Ping coming soon page</title>
+  <script src="https://kit.fontawesome.com/1a18b778ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="logo ping">
+  </header>
+  <main>
+    <section>
+      <div class="section-info">
+        <h1>We are launching <span>soon!</span></h1>
+        <p>Subscribe and get notified</p>
+        <form method="POST" action="#">
+          <input type="text" 
+            placeholder="Your email address..."
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            oninvalid="errorEmail()"
+            oninput="validEmail()"
+            >
+          <button type="submit">Notify Me</button>
+          <span class="span-error"></span>
+        </form>
+      </div>
+      <div class="section-image">
+        <img src="images/illustration-dashboard.png" alt="dashboard">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-icons">
+      <div class="border-icons">
+        <a href="">
+          <i class="fa-brands fa-facebook-f fa-2xs "></i>
+        </a>
+      </div>
+      <div class="border-icons">
+        <a href="">
+          <i class="fa-brands fa-twitter fa-2xs "></i>
+        </a>
+      </div>
+      <div class="border-icons">
+        <a href="">
+          <i class="fa-brands fa-instagram fa-2xs "></i>
+        </a>
+      </div>
+    </div>
+    <span>&copy; Copyright Ping. All rights reserved.</span>
+  </footer>
+  <script src="scripts/script.js"></script>
+</body>
+</html>

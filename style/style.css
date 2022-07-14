@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+    --font-main: 'Libre Franklin', sans-serif;
+    --color-button: hsl(223, 87%, 63%);
+    --color-input: hsl(225, 39%, 85%);
+    --color-h1: hsl(0, 0%, 59%);
+    --color-h1-span: hsl(209, 33%, 12%);
+    --color-error: hsl(354, 80%, 58%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    font-size: 20px;
+    text-align: center;
+}
+
+header > img {
+    margin-top: 85px;
+    margin-bottom: 45px;
+}
+
+.section-info > h1 {
+    margin-bottom: 17px;
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: var(--color-h1);
+}
+
+.section-info > h1 > span {
+    font-weight: 700;
+    color: var(--color-h1-span);
+}
+
+.section-info > p {
+    margin-bottom: 40px;
+}
+
+form > input {
+    text-indent: 30px;
+    margin-right: 12px;
+    height: 55px;
+    width: 65%;
+    border: 1px solid var(--color-input);
+    border-radius: 35px;
+    outline: none;
+}
+
+form > input::placeholder {
+    font-family: var(--font-main);
+    font-size: 16px;
+    color: var(--color-input);
+}
+
+form > button {
+    height: 55px;
+    width: 30%;
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--color-button);
+    box-shadow: 0px 8px 15px var(--color-input);
+    cursor: pointer;
+}
+
+form > button:hover {
+    background-color: hsla(223, 87%, 63%, 0.705);
+    transition: 0.3s;
+}
+
+form {
+    margin: auto;
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+.section-image {
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 65px;
+    max-width: 640px;
+}
+
+.section-image > img {
+    max-width: 100%;
+}
+
+.footer-icons {
+    margin: auto;
+    margin-bottom: 15px;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.border-icons {
+    height: 30px;
+    width: 30px;
+    border: 1px solid hsla(226, 39%, 85%, 0.541);
+    border-radius: 100%;
+}
+
+.border-icons:hover {
+    background-color: var(--color-button);
+    transition: 0.3s;
+}
+
+.border-icons > a {
+    text-decoration: none;
+}
+
+.fa-brands {
+    display: inline;
+    vertical-align: middle;
+    padding: 8px;
+    color: var(--color-button);
+}
+
+.fa-brands:hover {
+    color: white;
+}
+
+footer > span {
+    padding-bottom: 50px;
+    font-size: 12px;
+    color: var(--color-h1);
+}
+
+.span-error {
+    display: none;
+    text-align: left;
+    margin-top: 8px;
+    margin-left: 40px;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--color-error);
+}
+
+@media (max-width: 750px) {
+    body {
+        padding: 0 40px;
+    }
+    
+    form {
+        margin: auto;
+        max-width: 500px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content:space-around;
+    }
+
+    form > input {
+        order: 1;
+        width: 100%;
+        
+    }
+
+    form > button {
+        order: 3;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .span-error {
+        display: none;
+        text-align: center;
+        order: 2;
+        margin-left: 0;
+        margin-top: 8px;
+        font-size: 14px;
+        font-style: italic;
+        color: var(--color-error);
+    }
+}
+
+@media (max-width: 375px) {
+    .section-info > h1 {
+        font-size: 22px;
+    }
+
+    .section-info > p {
+        font-size: 14px;
+    }
+
+    form > input {
+        height: 40px;
+        margin-right: 0;
+    }
+
+    form > button {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .span-error {
+        font-size: 12px;
+    }
+}
