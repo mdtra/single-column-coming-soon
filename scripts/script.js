@@ -9,5 +9,7 @@ function errorEmail() {
 
 function validEmail() {
     valid = document.querySelector('span.span-error')
+    validInput = document.querySelector('input')
+    validInput.style.border = '1px solid hsl(225, 39%, 85%)'
     valid.style.display = 'none'
 }
