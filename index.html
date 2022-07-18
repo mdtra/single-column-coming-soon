@@ -18,14 +18,12 @@
         <h1>We are launching <span>soon!</span></h1>
         <p>Subscribe and get notified</p>
         <form method="POST" action="#">
-          <input type="text" 
+          <input class="input-email" type="text" 
             placeholder="Your email address..."
             required
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            oninvalid="errorEmail()"
-            oninput="validEmail()"
             >
-          <button type="submit">Notify Meee</button>
+          <button class="submit-button" type="submit">Notify Meee</button>
           <span class="span-error"></span>
         </form>
       </div>

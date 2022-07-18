@@ -1,3 +1,7 @@
+let input = document.querySelector('.input-email')
+input.oninvalid = errorEmail
+input.oninput = validEmail
+
 function errorEmail() {
     error = document.querySelector('span.span-error')
     errorInput = document.querySelector('input')
