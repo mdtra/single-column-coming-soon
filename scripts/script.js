@@ -1,6 +1,7 @@
 let input = document.querySelector('.input-email')
 input.oninvalid = errorEmail
 input.oninput = validEmail
+input.pattern = '[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'
 
 function errorEmail() {
     error = document.querySelector('span.span-error')
